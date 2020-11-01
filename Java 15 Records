@@ -1,0 +1,19 @@
+
+@SuppressWarnings("preview")
+record Detail(String name, int age) {
+}
+
+public class RecordTest {
+	public static void main(String[] args) {
+
+		/* instantiating object */
+		var record = new Detail("Mohammed Shafiq Fata", 45);
+
+		/* showing to string without writing toString code */
+		System.out.println(record);
+
+		/* showing getters without writing getters code */
+		System.out.println(record.name());
+		System.out.println(record.age());
+	}
+}
